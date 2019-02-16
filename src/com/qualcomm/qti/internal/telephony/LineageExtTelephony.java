@@ -491,6 +491,18 @@ public class LineageExtTelephony extends IExtTelephony.Stub {
     }
 
     @Override
+    public Token queryUpperLayerIndInfo(int slotId, Client client) {
+        // I hope we don't use this
+        return new Token(-1);
+    }
+
+    @Override
+    public Token query5gConfigInfo(int slotId, Client client) {
+        // I hope we don't use this
+        return new Token(-1);
+    }
+
+    @Override
     public Token queryNrDcParam(int slotId, Client client) {
         // I hope we don't use this
         return new Token(-1);
